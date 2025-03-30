@@ -1,0 +1,61 @@
+@import url(//db.onlinewebfonts.com/c/d51960ec2325752ed629b83e3f40c4c4?family=Roos+St+Regis+Text);
+
+#rookieContainer{
+    background:#0b0727;
+    width: 100%;
+
+}
+.rookie_title{
+    color: #fff;
+    padding-top: 200px;
+    width: 55%;
+    transform: translate(65%, 0);
+    
+}
+.rookie_title > p, .rookie_fixed  p{
+    font-family: 'Red Hat Display', sans-serif;
+    letter-spacing: 2px;
+}
+.rookie_title > h1{
+    font-family: 'Roos St Regis Text';
+    font-size:120px;
+    margin-top:10px;
+    margin-bottom:35px;
+}
+.rookie_lineR{
+    width:130px;
+    height: 3px;
+    background:#c22133;
+    margin-left:-40px;
+    display:inline-block;
+}
+.rookie_text{
+    font-family: "NanumSquare", "MalgunGothic", "Dotum", "Gulim", "Arial", sans-serif;
+    display: inline-flex;
+    margin-left:33px;
+    vertical-align: middle;
+    margin-top:25px;
+    line-height: 1.2;
+    transform: skew(-0.03deg);
+}
+.rookie_content{
+    width:62%;
+    transform: translate(50%, 0);
+    margin-top:200px;
+}
+.rookie_fixed{
+    width: 600px;
+    background: #fff;
+    position: absolute;
+    left: 1100px;
+    top: 800px;
+    height: 600px;
+    box-sizing: border-box;
+    padding: 36px;
+}
+.rookie_fixed  h2{
+    font-family: 'Roos St Regis Text';
+    font-size:80px;
+    margin-top:10px;
+    margin-bottom:35px;
+}

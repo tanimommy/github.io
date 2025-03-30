@@ -1,0 +1,46 @@
+@charset "utf-8";
+/* CSS Document */
+html, body{height:100%;}
+
+.header{position:fixed; left:0; top:0; width:100%; height:90px; color:#Fff; 
+ z-index:10}
+.wrap{width:1200px; margin:0 auto; overflow:hidden;}
+.logo{float:left; }
+.nav{float:right; margin-top:30px; margin-right:20px;}
+.menu{overflow:hidden;}
+.menu>li{float:left; line-height:40px;   }
+.menu>li>a{display:block;  font-weight:bold; padding:0 15px;}
+.submenu{ font-size:12px; background-color:rgba(0,0,0,0.7); position:absolute;  top:100px; width:170px; box-sizing:border-box; padding:15px 20px; color:#999; display:none;}
+.submenu a{transition:all 0.2s;}
+.submenu>li:hover a{color:#fff; margin-left:10px; }
+
+.main{width:100%; height:100%;}
+.main .swiper-container{width:100%; height:100%;}
+.main .swiper-slide{background-color:#000000;}
+.main .swiper-slide img:nth-child(1){width:100%; height:100%; opacity:0.5;}
+.main .swiper-slide img:nth-child(2){position:absolute; left:40%; top:30%;}
+
+.main .swiper-pagination-bullet {
+  width: 30px;
+  height: 6px;
+  display: inline-block;
+  border-radius: 0%;
+  background-color:rgba(255,255,255, 0.5);
+  opacity: 1;
+}
+.main .swiper-pagination-bullet-active{
+	opacity:1;
+	background-color:#fff;}
+
+.contents{width:100%; padding:50px 0; overflow:hidden;}
+.con1_title{text-align:center;}
+.con1_title p:nth-child(1){font-size:30px; font-weight:bold; letter-spacing:2px;}
+.con1_title p:nth-child(2){margin-top:30px; line-height:1.8; font-size:14px; color:#666;  font-weight:bold;}
+.con1_contents{margin:50px; width:1200px; overflow:hidden;}
+.con1_box{float:left; position:relative; width:380px; height:550px; overflow:hidden; border-bottom:1px solid #999; padding-bottom:10px;}
+.con1_box:nth-child(1)~.con1_box{margin-left:30px;}
+.con1_box img{width:100%; height:85%;}
+.con1_box p:nth-of-type(1){position:absolute; left:0; bottom:15%; background-color:#fff; line-height:300%; width:130px; text-align:center; font-weight:bold; color:#666;}
+.con1_box p:nth-of-type(2){ line-height:250%; font-weight:bold; margin-left:10px;}
+.con1_box p:nth-of-type(3){margin-top:10px; margin-left:10px; font-size:11px; font-weight:bold; color:#7F7F7F;}
+.con1_box p:nth-of-type(3):hover{color:#FF0509;}

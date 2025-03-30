@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter&display=swap');
+
+@font-face {
+    font-family: 'GmarketSansLight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'LeferiPoint-WhiteObliqueA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-WhiteObliqueA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, main {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{
+	color:inherit;
+	text-decoration:none;
+}
+
+
+
+
+
+
+
+
+
+
+#noticeboard{
+    max-width:100%;
+    height:100vh;
+    min-width: 1900px;
+    margin: 0 auto;
+}
+#noticeboard header{
+    height:4.9vh;
+    min-height: 35px;
+}
+#noticeboard header a span:nth-child(1){
+    font-size:1.2rem;
+    padding:1.5vh;
+}
+#noticeboard_wrap{
+    width: 100%;
+    min-width: 1200px;
+    max-width: 1920px;
+    height: 100vh;
+    min-height:890px;
+    position: relative;
+    margin: 0 auto;
+    font-family: 'GmarketSansLight';
+}
+#noticeboard_wrap > div:nth-child(1){
+    position:absolute;
+    width:20%;
+    height: 100%;
+    background:#fff;
+    box-shadow: 7px 10px 25px -4px rgb(221, 221, 221);
+}
+#noticeboard_wrap > div:nth-child(2){
+    width:100%;
+    height: 100%;
+    background:#eceff4;
+    padding-left: 23%;
+    padding-top: 2.3%;
+    padding-right:2.7%;
+    padding-bottom: 2.3%;
+    box-sizing: border-box;
+}
+.nB_profile{
+    box-sizing: border-box;
+    padding:40px;
+}
+.nB_profileimg{
+    width:120px;
+    height:120px;
+    background-color: olive;
+    border-radius:90px;
+}
+.nB_profiletext{
+    margin-top:30px;
+}
+.nB_profiletext > p{
+    display:inline-block;
+    font-size:16px;
+}
+.nB_profiletext > a{
+    margin-left:20px;
+    vertical-align: middle;
+}
+.nB_menu{
+    width:100%;
+    margin-top:70px
+}
+.nB_menu > li{
+    width:100%;
+    border-top:1px solid #eee;
+    border-bottom:1px solid #eee;
+    height: 60px;
+    line-height:67px;
+    position: relative;
+}
+.nB_menu > li:not(:first-child){
+    border-top:none;
+}
+.nB_menu > li > a{
+    display:block;
+    width:100%;
+    height:100%;
+    padding: 0 35px;
+    box-sizing: border-box;
+}
+.nB_menutext > span:nth-child(1){
+    font-size:22px;
+    vertical-align: middle;
+    margin-right:15px;
+}
+.nB_menutext > span:nth-child(2){
+    font-size:18px;
+}
+.nB_menu > li:nth-child(2) .nB_menutext > span:nth-child(1){
+    font-size: 30px;
+    margin-left: -3px;
+    margin-right: 9px;
+}
+.nB_menuon{
+    position:absolute;
+    right:0;
+    top:0;
+    display: inline-block;
+    width: 10px;
+    height:100%;
+    vertical-align: bottom;
+    background:#1b3f7c;
+}
+.nB_menuon2{
+    color:#1b3f7c;
+    font-family: 'GmarketSansBold';
+}
+.nB_search{
+    width:100%;
+    height: 6%;
+    max-height:50px;
+}
+.nB_search input{
+    width: 94%;
+    display: inline-block;
+    height: 100%;
+    border: none;
+    border-radius: 50px 0 0 50px;
+    font-size:20px;
+    box-sizing: border-box;
+    padding:0 23px;
+    padding-top: 5px;
+    font-family: 'GmarketSansMedium';
+}
+.nB_search input::placeholder{
+    color:#cfd3da;
+    
+}
+.nB_search a{
+    display: inline-block;
+    width: 5%;
+    height: 100%;
+    background: #1b3f7c;
+    margin-left: -5px;
+    vertical-align: top;
+    border-radius:0 50px 50px 0;
+}
+.nB_search a > span{
+    color:#fff;
+    font-size:30px;
+    margin-top: 8px;
+    margin-left: 19px;
+}
+.nB_boardTitle{
+    margin-top:5%;
+    overflow: hidden;
+}
+.nB_boardTitle > li:nth-child(1){
+    float:left;
+    font-size:26px;
+    font-family: 'GmarketSansBold';
+    margin-top:4px;
+}
+.nB_boardTitle > li:nth-child(2){
+    float:right;
+}
+.nB_boardTitle > li:nth-child(2) > a{
+    display: block;
+    background: #1b3f7c;
+    color:#fff;
+    padding: 5px 13px;
+}
+.nB_boardTitle > li:nth-child(2) > a > span{
+    vertical-align: middle;
+    font-size:20px;
+    margin-left:2px;
+}
+.nB_boardContent{
+    width: 100%;
+    height: 80%;
+    background:#fff;
+    margin-top:1%;
+    box-sizing: border-box;
+    padding:1.5% 2%;
+}
+.nB_boardContent table{
+    width:100%;
+    height:93%;
+    margin:0 auto;
+    border-bottom: 2px solid #1b3f7c;
+}
+caption{
+    overflow: hidden;
+    position: relative;
+    z-index: -1;
+    border: 0;
+    width: 1px;
+    height: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+}
+.nB_boardContent table thead th{
+    font-family: 'GmarketSansMedium';
+    border-bottom:2px solid #1b3f7c;
+    padding-top:1.5%;
+    padding-bottom:1%;
+    text-align: center;
+    font-size:17px;
+}
+.nB_boardContent table tbody td{
+    border-bottom:1px solid #c7c9ce;
+    text-align: center;
+    vertical-align: middle;
+}
+.nB_boardContent table tbody tr{
+    transition:all 0.3s;
+}
+.nB_boardContent table tbody tr:hover{
+    background:#eceff4;
+}
+.nB_boardContent table tbody td > a{
+    transition:all 0.3s;
+}
+.nB_boardContent table tbody td > a:hover{
+    text-decoration: underline;
+}
+.nB_boardContent table tbody tr:last-child td{
+    border-bottom:none;
+}
+.nB_numbering{
+    width:17%;
+    margin:0 auto;
+    margin-top:1.5%;
+    overflow:hidden;
+}
+.nB_numbering > p{
+    float:left;
+    width: 20px;
+    font-size:27px;
+}
+.nB_numbering > p:nth-of-type(1){
+    margin-right:10px;
+}
+.nB_numbering > p:nth-of-type(2){
+    margin-left:10px;
+}
+.nB_numbering > ul{
+    float:left;
+    overflow:hidden;
+    font-size:18px;
+    margin-top:4px;
+}
+.nB_numbering > ul > li{
+    float:left;
+    padding:0 11px;
+}
+.nB_numbering > ul > li > a{
+    display:inline-block;
+    width: 100%;
+}
+
+
+
+
+
+
+
+/*글쓰기 페이지*/
+.nB_boardContent2{
+    width: 100%;
+    height: 80%;
+    background:#fff;
+    margin-top:1%;
+    box-sizing: border-box;
+    padding:1.5% 2%;
+}
+.nB_boardContent2 table{
+    width:100%;
+    height: 91%;
+    margin:0 auto;
+    margin-top:1%;
+    border-top: 2px solid #1b3f7c;
+    border-bottom: 2px solid #1b3f7c;
+}
+.nB_boardContent2 table th{
+    font-family: 'GmarketSansMedium';
+    width: 14%;
+    text-align: left;
+    padding-left:2%;
+    height:5%;
+}
+.nB_boardContent2 table td{
+    width:80%;
+}
+.nB_boardContent2 table td > input{
+    width:98.4%;
+    border:1px solid #c7c9ce;
+    font-family: 'GmarketSansLight';
+    font-size:18px;
+    box-sizing: border-box;
+    padding:0.5% 0;
+    padding-left:10px;
+    vertical-align: middle;
+}
+.nB_boardContent2 table td > select{
+    width:98.4%;
+    border:1px solid #c7c9ce;
+    font-family: 'GmarketSansLight';
+    font-size:18px;
+    box-sizing: border-box;
+    padding:0.5% 0;
+    padding-left:10px;
+    vertical-align: middle;
+}
+.nB_boardContent2 table tr:first-child td{
+    box-sizing: border-box;
+    padding-top: 1%;
+}
+.nB_boardContent2 table td:last-child{
+    padding-left:1%;
+    box-sizing: border-box;
+    padding-bottom: 1%;
+}
+.nB_boardContent2 table td textarea{
+    resize: none;
+    width:96.4%;
+    height:95%;
+    font-family: 'GmarketSansLight';
+    font-size:18px;
+    padding:10px 15px;
+    border:1px solid #c7c9ce;
+
+}
+.nB_boardContent2 > a{
+    display:block;
+    width:56px;
+    background: #1b3f7c;
+    color: #fff;
+    padding: 0.5% 1%;
+    margin:0 auto;
+    margin-top:1%;
+}
+.secret_td > input[type=checkbox]{display:inline-block;width:4%;}
+.secret_td > input[type=text]{display:inline-block;width:30%;}

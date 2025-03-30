@@ -1,0 +1,24 @@
+@charset "utf-8";
+/* container */
+.container section{position:relative;overflow:hidden;background:#fff;text-align:center}
+.container section[class^="sct_"]{margin:0 auto;overflow:hidden;padding:25px 0 0}
+.container section .tit{position:relative;font-weight:normal;font-size:34px;padding:15px 0;font-family:'Roboto',"Helvetica Neue", "Apple SD 산돌고딕 Neo", "Apple SD Gothic Neo", "나눔고딕", "Nanum Gothic", "돋움", "Dotum", Helvetica, Arial, sans-serif;}
+.container section .desc{font-size:22px;padding:10px 0 30px}
+.container section[class^="sct_"] .ct{overflow:hidden;max-width:1200px;margin:0 auto;color:#333}
+/*.container section div[class^="bx_"]{margin-top:20px}*/
+
+
+
+/* submit_type1 */
+.container section.sct_submit_type{background:#5d9cec;padding:0;margin-top:20px}
+.container .sct_submit_type .ct{clear:both;margin-left:20px;padding:30px 0}
+.sct_submit_type .text_area{float:left;width:48%;color:#f8f8f8;margin-left:2%}
+.sct_submit_type .text_area .desc{padding:0;margin:10px 0 20px}
+.sct_submit_type .text_area>a{display:inline-block;padding:10px;border:1px solid #f8f8f8;color:#f8f8f8;margin-bottom:15px;font-weight:bold;border-radius:5px;-webkit-;border-radius:5px}
+.sct_submit_type .text_area>a:hover{background:#333}
+.sct_submit_type .bx_info{float:left;width:50%}
+.sct_submit_type .bx_info .inp_bx{position:relative;overflow:hidden;margin:25px 20px 0}
+.sct_submit_type .bx_info .inp_bx label{position:absolute;top:2px;left:5px;line-height:35px}
+.sct_submit_type .bx_info .inp_bx textarea,.sct_submit_type .bx_info .inp_bx input{width:100%;height:35px;border:1px solid #999;padding:0 5px 0 65px}
+.sct_submit_type .bx_info .inp_bx textarea{padding:10px 5px;height:65px}
+.sct_submit_type .bx_info .btn_submit{display:inline-block;margin-top:25px;padding:10px 20px;background:#fff;border:1px solid #999;cursor:pointer}

@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>김재원 그리고 주부은, 결혼합니다.</title>
+    <script src="js/jquery-3.5.0.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://kit.fontawesome.com/0c7765c9fe.js" crossorigin="anonymous"></script>
+	  <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	  <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	  <link rel="shortcut icon" href="img/favicon.ico">
+	  <link href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css2?family=Allison&family=Satisfy&display=swap" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="body_background">
+<div class="text2">해당 페이지는 가로 280px까지 지원합니다.<br>280이상 모바일기기로 이용해주십시오.</div>
+
+<div id="wrap">
+    <div id="album_wrap">
+        <div class="album">
+            <div class="al_top">
+              <div class='music-card playing'>
+                <i class="fa fa-pause trigger" aria-hidden="true"></i>
+                <i class="fa fa-play trigger" aria-hidden="true"></i>
+              </div>
+              <a href="index.html#box3"class="xbtn">X</a>
+            </div>
+            <div class="main">
+                <div class="slider slider-for">
+                  <div><h3><img src="img/a2.jpg" alt=""></h3></div>
+                  <div><h3><img src="img/a3.jpg" alt=""></h3></div>
+                  <div><h3><img src="img/a4.jpg" alt=""></h3></div>
+                  <div><h3><img src="img/a1.png" alt=""></h3></div>
+                  <div><h3><img src="img/a5.jpg" alt=""></h3></div>
+                  <div><h3><img src="img/a6.jpg" alt=""></h3></div>
+                  <div><h3><img src="img/a7.png" alt=""></h3></div>
+                </div>
+                <div class="slider slider-nav">
+                    <div><h3><img src="img/a22.jpg" alt=""></h3></div>
+                    <div><h3><img src="img/a33.jpg" alt=""></h3></div>
+                    <div><h3><img src="img/a44.jpg" alt=""></h3></div>
+                    <div><h3><img src="img/a11.png" alt=""></h3></div>
+                    <div><h3><img src="img/a55.jpg" alt=""></h3></div>
+                    <div><h3><img src="img/a66.jpg" alt=""></h3></div>
+                    <div><h3><img src="img/a77.png" alt=""></h3></div>
+                </div>
+            </div>
+            <div class="al_btm"></div>
+        </div>
+    </div>
+</div>
+
+	
+	
+<script>
+  /*슬라이드 2개동시*/
+ $('.slider-for').slick({
+   slidesToShow: 1,
+   slidesToScroll: 1,
+   arrows: false,
+   fade: true,
+   asNavFor: '.slider-nav'
+ });
+ $('.slider-nav').slick({
+   slidesToShow: 5,
+   slidesToScroll: 1,
+   asNavFor: '.slider-for',
+   dots: true,
+   focusOnSelect: true
+ });
+
+ $('a[data-slide]').click(function(e) {
+   e.preventDefault();
+   var slideno = $(this).data('slide');
+   $('.slider-nav').slick('slickGoTo', slideno - 1);
+ });
+
+
+
+ /*music 한버튼으로*/
+    var audio = new Audio('file/Dajeonghi.mp3');
+		audio.autoplay = true;
+    audio.loop = true;
+
+		$('.trigger').click(function() {
+		if (audio.paused == false) {
+			audio.pause();
+			$('.fa-play').show();
+			$('.fa-pause').hide();
+		} else {
+			audio.play();
+			$('.fa-pause').show();
+			$('.fa-play').hide();
+		}
+		});
+
+
+</script>
+</body>
+</html>

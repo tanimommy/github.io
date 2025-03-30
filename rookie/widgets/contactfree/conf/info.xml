@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget version="0.2">
+    <title xml:lang="ko">K-Onepage Contact 위젯</title>
+    <description xml:lang="ko">K-Onepage 전용 문의접수 위젯입니다.</description>
+    <version>1.0</version>
+    <date>2015-08-01</date>
+
+    <author email_address="nizbridge@gmail.com">
+        <name xml:lang="ko">nizbridge</name>
+    </author>
+
+    <extra_vars>
+        <var id="target_mid">
+            <type>text</type>
+            <name xml:lang="ko">대상 모듈</name>
+            <description xml:lang="ko">요청 글이 등록될 게시판의 mid 값을 입력하세요.</description>
+        </var>
+        <var id="reload">
+            <type>select</type>
+            <name xml:lang="ko">Reload</name>
+            <description xml:lang="ko">문의접수 후 화면을 새로고침합니다.</description>
+            <options>
+                <value>N</value>
+                <name xml:lang="ko">사용안함</name>
+            </options>
+            <options>
+                <value>Y</value>
+                <name xml:lang="ko">사용</name>
+            </options>
+        </var>
+		<var id="reload_url">
+            <type>text</type>
+            <name xml:lang="ko">Reload_Url</name>
+            <description xml:lang="ko">화면을 새로고침할 경우 설정한 URL로 이동할 수 있습니다.</description>
+        </var>
+    </extra_vars>
+</widget>

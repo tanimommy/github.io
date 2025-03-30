@@ -1,0 +1,550 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>김재원 그리고 주부은, 결혼합니다.</title>
+    <script src="js/jquery-3.5.0.js"></script>
+	<script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<link href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Allison&family=Satisfy&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+	<div class="text2">해당 페이지는 가로 280px까지 지원합니다.<br>280이상 모바일기기로 이용해주십시오.</div>
+
+	<div id="wrap">
+		<div id="box1" class="box">
+			<img class="box1_img1" src="img/box1_main.jpg">
+			<div class="box1_title">
+				<p class="result1">　</p>
+			</div>
+			<div class="box1_bottom">
+				<div class="box1_bottom_L">
+					<div></div>
+					<p>wedding<br>invitation</p>
+				</div>
+				<div class="box1_bottom_R">
+					<div>
+						<img src="img/box1_circle.png" alt="">
+					</div>					
+					<p>김재원 <span>and </span> &nbsp;주부은</p>
+					<p>2021.09.25 SAT 11AM</p>
+					<p>웨딩그룹위더스 광주, 3층 아모르홀</p>
+				</div>
+			</div>
+		</div>
+	
+		<div id="box2" class="box">
+			<div class='music-card playing'>
+				<!--<i class="fa fa-pause trigger" aria-hidden="true"></i>
+				<i class="fa fa-play trigger" aria-hidden="true"></i>-->
+				<div class="trigger pause" aria-hidden="true"><img src="img/on.gif"></div>
+				<div class="trigger play" aria-hidden="true"><img src="img/off.gif"></div>
+			</div>
+			<div class="title">
+				<p data-aos="fade-right" data-aos-duration="1000">초<br>대<br>합<br>니<br>다<br>/</p>
+			</div>
+			<div class="box2_div" data-aos="fade-left" data-aos-duration="2000">
+				<p>
+					스물셋 가을, 영화관 앞에서의 설레임이<br>
+					서른하나 가을, 부부의 연을 맺게 되었습니다.
+				</p><br>
+				<p>
+					사랑과 행복의 모퉁이를 함께 걸어가려는<br>
+					저희의 첫 발걸음 앞에 모시고자 합니다.
+				</p><br>
+				<p>
+					조심스러운 2021년,<br>
+					따뜻한 연락, 반가운 걸음<br>
+					모두 마음 깊이 감사드립니다.
+				</p>
+			</div>
+			<img class="box2_flower"src="img/box2_flower.png">
+			<div class="box2_call">
+				<div class="box2_we">
+					<div class="title box2_we_title">
+						<p data-aos="fade-right" data-aos-duration="1000">신<br>랑<br>신<br>부<br>/</p>
+						<div class="box2_div" data-aos="fade-left" data-aos-duration="2000">
+							<span class="fw800">김○○ · 송○○</span><span class="fs35">의 차남 </span><span class="fw800">재원</span><a href="tel:010-0000-0000"><img class="call" src="img/box2_call.png" alt="call"></a>
+						</div>
+						<div class="box2_div" data-aos="fade-left" data-aos-duration="2000">
+							<span class="fw800">주○○ · 김○○</span><span class="fs35">의 장녀 </span><span class="fw800">부은</span><a href="tel:010-0000-0000"><img class="call" src="img/box2_call.png" alt="call"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="box3" class="box">
+			<div class="title box3_title">
+				<p data-aos="fade-right" data-aos-duration="1000">갤<br>러<br>리<br>/</p>
+			</div>
+			<div class="box3_album" data-aos="fade-left" data-aos-duration="2000">
+				<img src="img/m7.jpg" alt="">
+			</div>
+			<div class="box3_album_btn"  data-aos="fade-left" data-aos-duration="2000">
+				<a href="index2.html">사진 더보러가기 ▶</a>
+			</div>
+		</div>
+
+		<div id="box4" class="box">
+			<div class="title box4_title">
+				<p data-aos="fade-right" data-aos-duration="1000">결<br>혼<br>합<br>니<br>다<br>/</p>
+			</div>
+			<div class="box4_day" data-aos="fade-left" data-aos-duration="2000">
+				<p>2021년 9월 25일 토요일 오전11시</p>
+				<p>9월</p>
+				<table>
+					<thead>
+						<tr>
+							<th><span class="sunday">SUN</span></th>
+							<th>MON</th>
+							<th>TUE</th>
+							<th>WED</th>
+							<th>THU</th>
+							<th>FRI</th>
+							<th>SAT</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td>1</td>
+							<td>2</td>
+							<td>3</td>
+							<td>4</td>
+						</tr>
+						<tr>
+							<td><span class="sunday">5</span></td>
+							<td>6</td>
+							<td>7</td>
+							<td>8</td>
+							<td>9</td>
+							<td>10</td>
+							<td>11</td>
+						</tr>
+						<tr>
+							<td><span class="sunday">12</span></td>
+							<td>13</td>
+							<td>14</td>
+							<td>15</td>
+							<td>16</td>
+							<td>17</td>
+							<td>18</td>
+						</tr>
+						<tr>
+							<td><span class="sunday">19</span></td>
+							<td>20</td>
+							<td>21</td>
+							<td>22</td>
+							<td>23</td>
+							<td>24</td>
+							<td class="box4_heart">25</td>
+						</tr>
+						<tr>
+							<td><span class="sunday">26</td>
+							<td>27</td>
+							<td>28</td>
+							<td>29</td>
+							<td>30</td>
+							<td></td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="pink">AM 11:00</p>
+				<div id="dday"></div>
+			</div>
+		</div>
+
+		<div id="box5" class="box">
+			<div class="title box5_title">
+				<p data-aos="fade-right" data-aos-duration="1000">오<br>시<br>는<br> 길<br>/</p>
+			</div>
+			<p class="box5_address"  data-aos="fade-left" data-aos-duration="2000">
+				<span class="fw800">웨딩그룹위더스 광주</span>
+				광주광역시 서구 죽봉대로 153<br>
+				T.062-364-1234
+			</p>
+			<div class="box5_map"  data-aos="fade-left" data-aos-duration="2000">
+				<div style="font: 12px AppleSDGothicNeo-Regular, dotum, sans-serif; letter-spacing: -1px; color: rgb(51, 51, 51); position: relative;">
+					<div>
+						<a href="https://map.kakao.com/?urlX=473494&amp;urlY=464113&amp;itemId=8027617&amp;q=%EC%9B%A8%EB%94%A9%EA%B7%B8%EB%A3%B9%EC%9C%84%EB%8D%94%EC%8A%A4%20%EA%B4%91%EC%A3%BC&amp;srcid=8027617&amp;map_type=TYPE_MAP&amp;from=roughmap" target="_blank">
+							<img class="map" src="http://t1.daumcdn.net/roughmap/imgmap/9670dbc9e88bde4d681640668cdfe1b70c9a8beb55fa85e727b8c66def11f9fe" style="border: 1px solid rgb(204, 204, 204);"></a></div><div style="overflow: hidden; padding: 7px 11px; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 0px 0px 2px 2px; background-color: rgb(249, 249, 249);"><a href="https://map.kakao.com" target="_blank" style="float: left;"><img src="//t1.daumcdn.net/localimg/localimages/07/2018/pc/common/logo_kakaomap.png" width="72" height="16" alt="카카오맵" style="display:block;width:72px;height:16px"></a><div style="float: right; position: relative; top: 1px; font-size: 11px;"><a target="_blank" href="https://map.kakao.com/?from=roughmap&amp;srcid=8027617&amp;confirmid=8027617&amp;q=%EC%9B%A8%EB%94%A9%EA%B7%B8%EB%A3%B9%EC%9C%84%EB%8D%94%EC%8A%A4%20%EA%B4%91%EC%A3%BC&amp;rv=on" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">로드뷰</a><span style="width: 1px;padding: 0;margin: 0 8px 0 9px;height: 11px;vertical-align: top;position: relative;top: 2px;border-left: 1px solid #d0d0d0;float: left;"></span><a target="_blank" href="https://map.kakao.com/?from=roughmap&amp;eName=%EC%9B%A8%EB%94%A9%EA%B7%B8%EB%A3%B9%EC%9C%84%EB%8D%94%EC%8A%A4%20%EA%B4%91%EC%A3%BC&amp;eX=473494&amp;eY=464113" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">길찾기</a><span style="width: 1px;padding: 0;margin: 0 8px 0 9px;height: 11px;vertical-align: top;position: relative;top: 2px;border-left: 1px solid #d0d0d0;float: left;"></span><a target="_blank" href="https://map.kakao.com?map_type=TYPE_MAP&amp;from=roughmap&amp;srcid=8027617&amp;itemId=8027617&amp;q=%EC%9B%A8%EB%94%A9%EA%B7%B8%EB%A3%B9%EC%9C%84%EB%8D%94%EC%8A%A4%20%EA%B4%91%EC%A3%BC&amp;urlX=473494&amp;urlY=464113" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">지도 크게 보기</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="box6" class="box">
+			<div class="title box6_title">
+				<p data-aos="fade-right" data-aos-duration="1000">마<br>음<br>전<br>해<br>주<br>실<br>곳<br>/</p>
+			</div>
+			<div class="box6_ment" data-aos="fade-left" data-aos-duration="2000">
+				<img class="box6_img" src="img/box5_flower.png" alt="">
+				<p>"신랑신부에게 축하의 마음을 전해주세요"</p>
+				<a href="#g" id="groom">신랑측</a>
+				<a href="#b"id="bride">신부측</a>
+			</div>
+			<div class="box6_account">
+				<ul id="groom_account"class="box6_account_b">
+					<li class="account">
+						<p><span class="fw800">신랑</span> 김재원</p>
+						<input value="000-000-000000 신한" readonly>
+						<button onclick="copy_to_clipboard(event)"><img src="img/box5_account.png" alt="복사"></button>
+					</li>
+					<li class="account">
+						<p><span class="fw800">혼주</span> 송○○</p>
+						<input value="000000-00-000000 우체국" readonly>
+						<button onclick="copy_to_clipboard(event)"><img src="img/box5_account.png" alt="복사"></button>
+					</li>
+				</ul>
+				<ul id="bride_account"class="box6_account_b">
+					<li class="account">
+						<p><span class="fw800">신부</span> 주부은</p>
+						<input value="000000-00-000000 국민" readonly>
+						<button onclick="copy_to_clipboard(event)"><img src="img/box5_account.png" alt="복사"></button>
+					</li>
+					<li class="account">
+						<p><span class="fw800">혼주</span> 김○○</p>
+						<input value="000-00-000000 농협" readonly>
+						<button onclick="copy_to_clipboard(event)"><img src="img/box5_account.png" alt="복사"></button>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="box7"class="box" data-aos="fade-up" data-aos-duration="2000">
+			<a class="box7_share" href='javascript:;' id='kakao-link-btn'><img src="img/box7_kakao.png" alt="카톡"><span>모바일청첩장 공유하기</span></a>
+		</div>
+
+		<div id="box8" class="box">
+			<img class="box8_img" src="img/box7_img.jpg" alt="" data-aos="fade-up" data-aos-duration="2000">
+			<div class="box8_btm">
+					<div class="box8_txt">
+						<span>예쁜 예감이 들었다<br>우리는 언제나 손을 잡고 있게 될 것이다</span><br>
+						- 연인, 이이체
+					</div>
+					<div class="box8_right">
+						<div class="line"></div>
+						<p>wedding<br>invitation</p>
+					</div>
+					<div class="box8_madeby"><span>made by</span>　주 부 은</div>
+			</div>
+		</div>
+
+
+	</div>
+	
+	
+	<script>
+
+		/*한글자씩 나타나기
+		$( document ).ready( function() {
+    
+          $( '.t1' ).show( 500 );
+		  $( '.t2' ).delay(500).show( 500 );
+		  $( '.t3' ).delay(1000).show( 500 );
+		  $( '.t4' ).delay(1500).show( 500 );
+		  $( '.t5' ).delay(2000).show( 500 );
+
+      } );
+	  */
+
+
+		/*계좌복사*/
+		function copy_to_clipboard(event) {    
+		var copyText = event.target.parentNode.previousElementSibling;
+		copyText.select();
+		copyText.setSelectionRange(0, 99999);
+		document.execCommand("Copy");
+		alert('복사되었습니다, 감사합니다.');
+		} 
+
+		/*디데이날짜*/
+		var today = new Date(); //오늘날짜 객체 선언
+		var year = today.getFullYear();
+		var month = ('0' + (today.getMonth() + 1)).slice(-2);
+		var day = ('0' + today.getDate()).slice(-2);
+
+		var dateString = year + '-' + month + '-' + day; // YYYY-MM-DD 형식으로 담는다.
+		var marriageString = '2021-09-25' // 결혼식일
+		//console.log(dateString);
+
+		var day1 = new Date(dateString); //수식을 위해 Date객체에 날짜를 담는다.
+		var day2 = new Date(marriageString); //수식을 위해 Date객체에 날짜를 담는다.
+
+		var difference= Math.abs(day2-day1); //difference 변수에 결과값이 초단위로 담긴다.
+		//console.log(difference);
+		days = difference/(1000 * 3600 * 24) //초단위로 담긴 difference변수를 날짜에 맞게 수식을 계산한다.
+
+		document .getElementById("dday") .innerHTML ="예식날부터 <span class='sunday_fw800'>" + days + "</span>일 지났습니다.";
+
+
+
+		/*아코디언*/
+		$("#groom").click(function(){
+			
+			if($('#groom_account').css('display') === 'none' ){
+				$('#groom').css({"background":"#3b2826"});
+				$("#bride").css({"background":"#7e6e6d"});
+				$('#groom_account').stop().slideDown(300);
+				$('#bride_account').stop().css({'display':'none'});
+			}else{
+				$(this).css({"background":"#7e6e6d"});
+				$("#bride").css({"background":"#7e6e6d"});
+				$('#groom_account').stop().slideUp(300);
+				$('#bride_account').stop().css({'display':'none'});
+			}
+		});
+
+		$("#bride").click(function(){
+			
+			if($('#bride_account').css('display') === 'none' ){
+				$('#bride').css({"background":"#3b2826"});
+				$("#groom").css({"background":"#7e6e6d"});
+				$('#bride_account').stop().slideDown(300);
+				$('#groom_account').stop().css({'display':'none'});
+			}else{
+				$(this).css({"background":"#7e6e6d"});
+				$("#groom").css({"background":"#7e6e6d"});
+				$('#bride_account').stop().slideUp(300);
+				$('#groom_account').stop().css({'display':'none'});
+			}
+		});
+
+
+		/*music 한버튼으로*/
+		var audio = new Audio('file/Charlie Puth-01-One Call Away (Acoustic).mp3');
+		audio.autoplay = true;
+		audio.loop = true;
+
+		$('.trigger').click(function() {
+		if (audio.paused == false) {
+			audio.pause();
+			$('.play').show();
+			$('.pause').hide();
+		} else {
+			audio.play();
+			$('.pause').show();
+			$('.play').hide();
+		}
+		});
+	
+
+		/*카카오톡공유하기*/
+
+		Kakao.init('5f203b66b1e71908c0c2ac8bbfd31c72');
+		Kakao.Link.createDefaultButton({
+		container: '#kakao-link-btn',
+		objectType: 'feed',
+		content: {
+		title: document.title,
+		description: '2021.09.25 (토) 11시 \n웨딩그룹위더스 광주 3층 아모르홀',
+		imageUrl: document.images[0].src,
+		link: {
+		webUrl: document.location.href,
+		mobileWebUrl: document.location.href
+		}
+		},
+		buttons: [
+		{
+		title: '초대합니다',
+		link: {
+		mobileWebUrl: document.location.href,
+		webUrl: document.location.href
+		}
+		}
+		]
+		});
+
+		/*앨범
+		$( '.box3_album_btn > a' ).click( function() {
+			$('#album_wrap').show();
+			$('body').css({overflow:'hidden'}); //배경스크롤고정
+		} );
+		$( '.xbtn' ).click( function() {
+			$('#album_wrap').hide();
+			$('body').css({overflow:'visible'}); //배경스크롤풀기
+		} );*/
+		
+		/*
+		$('a[href=#album_btn]').click(function(){
+			window.open("http://www.jubueun.com","width=100%, height=100%,  scrollbars=yes" );
+			pop.focus(); 
+		}); */
+
+
+
+		 /*앨범 기본슬라이드
+		 var $slide = $('.slide_ul');
+		var photoIndex = 0;
+		var slideLength = $slide.children().length;
+		// console.log('slide length = '+ slideLength);>>3
+
+		$('#right').on('click',function(){
+			photoIndex++;
+			photoIndex %=slideLength;
+			$slide.animate({"margin-left" : "-100%"},function(){
+				$slide.removeAttr("style").children(":first").appendTo($slide);
+			});
+
+		});
+		$('#left').on('click',function(){
+			photoIndex--;
+			if(photoIndex < 0) photoIndex =slideLength -1;
+			$slide.css("margin-left" , "-100%")
+			.prepend($slide.children(":last"))
+			.animate({"margin-left" : 0});
+		});*/
+
+		/*타이핑효과 */
+		String.prototype.toKorChars = function() { 
+			var cCho = [ 'ㄱ', 'ㄲ', 'ㄴ', 'ㄷ', 'ㄸ', 'ㄹ', 'ㅁ', 'ㅂ', 'ㅃ', 'ㅅ', 'ㅆ', 'ㅇ', 'ㅈ', 'ㅉ', 'ㅊ', 'ㅋ', 'ㅌ', 'ㅍ', 'ㅎ' ], 
+			cJung = [ 'ㅏ', 'ㅐ', 'ㅑ', 'ㅒ', 'ㅓ', 'ㅔ', 'ㅕ', 'ㅖ', 'ㅗ', 'ㅘ', 'ㅙ', 'ㅚ', 'ㅛ', 'ㅜ', 'ㅝ', 'ㅞ', 'ㅟ', 'ㅠ', 'ㅡ', 'ㅢ', 'ㅣ' ], 
+			cJong = [ '', 'ㄱ', 'ㄲ', 'ㄳ', 'ㄴ', 'ㄵ', 'ㄶ', 'ㄷ', 'ㄹ', 'ㄺ', 'ㄻ', 'ㄼ', 'ㄽ', 'ㄾ', 'ㄿ', 'ㅀ', 'ㅁ', 'ㅂ', 'ㅄ', 'ㅅ', 'ㅆ', 'ㅇ', 'ㅈ', 'ㅊ', 'ㅋ', 'ㅌ', 'ㅍ', 'ㅎ' ], cho, jung, jong; 
+			var str = this, 
+			cnt = str.length, 
+			chars = [], 
+			cCode; 
+			for (var i = 0; i < cnt; i++) { 
+				cCode = str.charCodeAt(i); 
+				if (cCode == 32) { 
+				  chars.push(" ");
+				  continue;
+				} // 한글이 아닌 경우 
+				if (cCode < 0xAC00 || cCode > 0xD7A3) { 
+					chars.push(str.charAt(i)); continue; 
+					} 
+				cCode = str.charCodeAt(i) - 0xAC00; 
+	
+				jong = cCode % 28; 
+				// 종성 
+				jung = ((cCode - jong) / 28 ) % 21 
+	
+				// 중성 
+				cho = (((cCode - jong) / 28 ) - jung ) / 21 
+				// 초성 
+	
+				//기본 코드 테스트가 ㅌㅔㅅ-ㅌ- 형식으로 저장됨 
+				// chars.push(cCho[cho], cJung[jung]); 
+				// if (cJong[jong] !== '') { 
+				//     chars.push(cJong[jong]); 
+				//     } 
+	
+	
+				//  테스트라는 문장이 있으면 ㅌ테ㅅ스ㅌ트 형식으로 저장되도록함 (타이핑을 위해서)
+				chars.push(cCho[cho]);
+				chars.push(String.fromCharCode( 44032 + (cho * 588) + (jung  * 28)));
+				if (cJong[jong] !== '') { 
+					chars.push(String.fromCharCode( 44032 + (cho * 588) + (jung  * 28) + jong ));
+				}
+			   
+			} 
+			
+			return chars; 
+		}
+	
+	
+		//타이핑할 문장
+		var result1  = "We are getting married."
+		var result2  = "";
+		var typeing1=[], typeing2=[];;
+		result1 = result1.split(''); // 한글자씩자름
+		result2 = result2.split(''); // 한글자씩자름
+	
+		//각글자 초성,중성,종성으로 나눔
+		for(var i =0; i<result1.length; i++){
+			typeing1[i]=result1[i].toKorChars();
+		}
+	   for(var i =0; i<result2.length; i++){
+			typeing2[i]=result2[i].toKorChars();
+		}
+	
+		//출력할 엘리먼트요소 가져옴 
+		var resultDiv1 = document.getElementsByClassName("result1")[0];
+		var resultDiv2 = document.getElementsByClassName("result2")[0];
+	
+		//
+		var text = "";
+		var i=0; 
+		var j=0; 
+	
+		//총글자수
+		var imax1 = typeing1.length;
+		var imax2 = typeing2.length;
+	
+		//setInterval을 이용해 반복적으로 출력 
+		var inter = setInterval(typi,150);
+		var inter2;
+	
+	
+		function typi(){
+			//글자수만큼 반복후 종료 
+		  resultDiv1.classList.add("cursor");
+			if(i<=imax1-1){
+				//각 글자가 초성 중성 종성 순서대로 추가되도록 
+				var jmax1 = typeing1[i].length;
+				resultDiv1.innerHTML = text + typeing1[i][j];
+				j++;
+				if(j==jmax1){
+					text+=  typeing1[i][j-1];//초성중성종성 순서대로 출력된 글자는 저장 ( 다음 글자와 이어붙이기 위해서 )
+					i++;
+					j=0;
+				}
+			} else{
+				clearInterval(inter);
+				 text ="";
+				i=0;
+				j=0; 
+		   setTimeout(function(){    
+			  resultDiv1.classList.remove("cursor");
+			  setTimeout(function(){             
+				 resultDiv2.classList.add("cursor");
+				 setTimeout(function(){
+					inter2 = setInterval(typi2,200);
+				 },400);
+			   },300);
+			 },400);
+			}
+		}
+	
+	 function typi2(){
+			//글자수만큼 반복후 종료 
+	
+			if(i<=imax2-1){
+				//각 글자가 초성 중성 종성 순서대로 추가되도록 
+				var jmax2 = typeing2[i].length;
+				resultDiv2.innerHTML = text + typeing2[i][j];
+				j++;
+				if(j==jmax2){
+					text+=  typeing2[i][j-1];//초성중성종성 순서대로 출력된 글자는 저장 ( 다음 글자와 이어붙이기 위해서 )
+					i++;
+					j=0;
+				}
+			} else{
+				clearInterval(inter);
+			}
+		}
+
+
+
+		/*aos스크롤*/
+		AOS.init();
+
+
+
+</script>
+</body>
+</html>
